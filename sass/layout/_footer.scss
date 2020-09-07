@@ -1,0 +1,51 @@
+footer {
+  background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer > div:not(:last-child) {
+  width: calc((50% - 45px) / 2);
+
+  margin-right: 30px;
+}
+.footer > div:last-child {
+  width: calc(50 - 15px);
+}
+
+.action-description {
+  display: block;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  margin-bottom: 20px;
+  margin-top: 14px;
+}
+
+.footer-link {
+  display: block;
+  margin-top: 9px;
+}
+
+.footer-add {
+  margin-top: 20px;
+}
+
+.address-footer {
+  color: $primary-white-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address-footer .link {
+  text-decoration: none;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}

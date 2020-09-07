@@ -1,0 +1,132 @@
+.form-field {
+  margin-right: 12px;
+  width: 358px;
+}
+.form-position {
+  display: flex;
+}
+.form-position input {
+  padding: 16px 15px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: inherit;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.modal-form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+}
+.form-input {
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border-color: #2196f3;
+    border-radius: 4px;
+  }
+
+  &:focus + .label-icon {
+    fill: $accent-color;
+  }
+}
+.modal-form-field label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+
+  color: $title-text-color;
+}
+.modal-form-field textarea {
+  min-height: 120px;
+
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+}
+label + textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.label-icon {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+
+  display: inline-block;
+  transform: translateY(150%);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.name {
+    width: 12px;
+    height: 12px;
+  }
+  &.tel {
+    width: 13px;
+    height: 13px;
+  }
+  &.mail {
+    width: 15px;
+    height: 12px;
+  }
+}
+
+.policy {
+  display: flex;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: $title-text-color;
+}
+
+.checkbox {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+
+  &:checked + .icon-check {
+    border-color: $accent-color;
+    background-color: $accent-color;
+    background-image: url(../images/icons/full-check-s.svg);
+
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+.icon-check {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+}

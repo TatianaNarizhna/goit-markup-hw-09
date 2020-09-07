@@ -1,0 +1,51 @@
+.client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 170px;
+  color: $icon-grey-color;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.first-co {
+  width: 44px;
+  height: 49px;
+  fill: currentColor;
+}
+.second-co {
+  width: 40px;
+  height: 52px;
+  fill: currentColor;
+}
+.third-co {
+  width: 41px;
+  height: 42.6px;
+  fill: currentColor;
+}
+.fourth-co {
+  width: 79.6px;
+  height: 42px;
+  fill: currentColor;
+}
+
+.fives-co {
+  width: 59px;
+  height: 47px;
+  fill: currentColor;
+}
+.six-co {
+  width: 88.5px;
+  height: 45.4px;
+  fill: currentColor;
+}

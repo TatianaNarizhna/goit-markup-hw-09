@@ -1,0 +1,46 @@
+.section.features {
+  padding-bottom: 0;
+}
+
+.feature-list .title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+.feature-list .description {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
+
+/* Features icons */
+
+.thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+
+  background-color: $secondary-background-color;
+
+  border: 0px solid $secondary-background-color;
+  border-radius: 4px;
+}
+.icon-features {
+  width: 70px;
+  height: 70px;
+}
