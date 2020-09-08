@@ -4,11 +4,15 @@
 }
 
 .site-nav {
-  display: flex;
-  margin-left: 85px;
+  display: none;
+  // display: flex;
+  // margin-left: 85px;
 
-  .item:not(:last-child) {
-    margin-right: 50px;
+  @include for-size(desktop) {
+    margin-left: 93px;
+    .item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 
   .link {
@@ -56,8 +60,9 @@
 /* Address navigation */
 
 .address-nav {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  // display: flex;
+  // margin-left: auto;
 }
 .address-nav .item + .item {
   margin-left: 30px;

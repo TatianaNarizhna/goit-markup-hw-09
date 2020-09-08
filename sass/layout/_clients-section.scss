@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 90px;
-  width: 170px;
+  // width: 170px;
   color: $icon-grey-color;
 
   border: 1px solid #afb1b8;
@@ -18,6 +18,11 @@
     border-color: $accent-color;
   }
 }
+.client-flex {
+  width: calc((100% - 15px * 4) / 2);
+  margin: 15px;
+}
+
 .first-co {
   width: 44px;
   height: 49px;

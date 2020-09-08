@@ -6,7 +6,9 @@
 
 .footer-icons {
   display: flex;
-  flex-wrap: wrap;
+  @include for-size(desktop) {
+    flex-wrap: wrap;
+  }
 }
 .sn-footer-icon {
   display: flex;

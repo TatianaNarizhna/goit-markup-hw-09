@@ -1,8 +1,12 @@
 .section.features {
-  padding-bottom: 0;
+  @include for-size(desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .feature-list .title {
+  display: inline-block;
+
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -12,6 +16,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: left;
+
+  @include for-size(tablet-landscape) {
+    display: block;
+  }
 }
 .feature-list .description {
   margin-top: 0;
@@ -32,13 +40,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+
+  width: 100%;
   height: 120px;
 
   background-color: $secondary-background-color;
 
   border: 0px solid $secondary-background-color;
   border-radius: 4px;
+
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 .icon-features {
   width: 70px;
