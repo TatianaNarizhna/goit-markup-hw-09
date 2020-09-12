@@ -32,7 +32,7 @@
 
         <ul class="address-nav list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
+            <a href="mailto:info@devstudio.com" class="link header">
               <svg class="address-icon envelope">
                 <use href="./images/svg-sprite.svg#icon-envelope"></use>
               </svg>
@@ -40,7 +40,7 @@
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link"
+            <a href="tel:+380961111111" class="link header"
               ><svg class="address-icon mobile">
                 <use href="./images/svg-sprite.svg#icon-mobile"></use>
               </svg>
@@ -48,6 +48,62 @@
             >
           </li>
         </ul>
+      </nav>
+
+      <nav class="burger-nav container">
+        <a href="./index.html" class="logo">
+          <span> <span class="logo-style">Web</span> Studio</span>
+        </a>
+        <button
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="icon-menu" href="./images/svg-sprite.svg#menu"></use>
+            <use class="icon-cross" href="./images/svg-sprite.svg#close"></use>
+          </svg>
+        </button>
+        <div class="menu-container" data-menu>
+          <div class="burger-menu">
+            <ul class="list">
+              <li class="item line">
+                <a href="./index.html" class="link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="burger-address">
+            <ul class="list">
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link header">
+                  <svg class="address-icon envelope">
+                    <use href="./images/svg-sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="link header"
+                  ><svg class="address-icon mobile">
+                    <use href="./images/svg-sprite.svg#icon-mobile"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -197,7 +253,6 @@
                   class="picture-block"
                   src="./images/our_team/desktop/img1-desktop.jpg"
                   alt="фото продакт-дизайнера"
-                  width="270"
                 />
               </picture>
 
@@ -264,7 +319,6 @@
                   class="picture-block"
                   src="./images/our_team/desktop/img2-desktop.jpg"
                   alt="фото продакт-дизайнера"
-                  width="270"
                 />
               </picture>
               <div class="team-form">
@@ -330,7 +384,6 @@
                   class="picture-block"
                   src="./images/our_team/desktop/img3-desktop.jpg"
                   alt="фото продакт-дизайнера"
-                  width="270"
                 />
               </picture>
               <div class="team-form">
@@ -396,7 +449,6 @@
                   class="picture-block"
                   src="./images/our_team/desktop/img4-desktop.jpg"
                   alt="фото продакт-дизайнера"
-                  width="270"
                 />
               </picture>
               <div class="team-form">
@@ -635,7 +687,7 @@
         </form>
       </div>
     </div>
-
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

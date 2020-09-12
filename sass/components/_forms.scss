@@ -1,8 +1,12 @@
 .form-field {
   width: 100%;
   max-width: 450px;
-  // margin-right: 12px;
-  // width: 358px;
+  margin-bottom: 20px;
+
+  @include for-size(desktop) {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 // .form-position {
 //   display: flex;

@@ -2,4 +2,10 @@
 <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color1, #fff)" stroke="#fff" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4267" d="M6.308 16.537l-0.147-0.14-2.205 2.088 7.767 7.41 16.318-15.567-2.19-2.089-14.128 13.465-5.416-5.167z"></path>
 </symbol><symbol id="icon-close" viewBox="0 0 32 32">
 <path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
-</symbol></defs></svg>
+</symbol><symbol viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="menu">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M8 14.667V12h24v2.667H8zm0 6.666h24v-2.666H8v2.666zM8 28h24v-2.667H8V28z" fill="#000"></path>
+  </symbol> <symbol viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" id="close">
+    <path d="M29.667 12.88L27.787 11l-7.454 7.453L12.88 11 11 12.88l7.453 7.453L11 27.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453z" fill="#212121"></path>
+  </symbol></defs></svg>
+
+  

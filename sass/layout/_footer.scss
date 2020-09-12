@@ -4,11 +4,28 @@ footer {
   padding-top: 60px;
 }
 .footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  text-align: center;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+.footer > div {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 50%;
+  }
+}
 .footer > div:not(:last-child) {
   margin-bottom: 60px;
 

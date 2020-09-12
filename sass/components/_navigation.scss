@@ -1,18 +1,23 @@
 .main-nav {
-  display: flex;
-  align-items: center;
+  display: none;
+  @include for-size(tablet-landscape) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .site-nav {
   display: none;
-  // display: flex;
-  // margin-left: 85px;
 
-  @include for-size(desktop) {
-    margin-left: 93px;
+  @include for-size(tablet-landscape) {
+    display: flex;
+    margin-left: 85px;
     .item:not(:last-child) {
       margin-right: 50px;
     }
+  }
+  @include for-size(desktop) {
+    margin-left: 93px;
   }
 
   .link {
@@ -60,17 +65,27 @@
 /* Address navigation */
 
 .address-nav {
-  display: none;
-  // display: flex;
-  // margin-left: auto;
+  @include for-size(tablet-landscape) {
+    display: block;
+    margin-left: auto;
+  }
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 .address-nav .item + .item {
-  margin-left: 30px;
+  margin-top: 10px;
+  @include for-size(desktop) {
+    margin-left: 30px;
+    margin-top: 0;
+  }
 }
 
 .address-nav .link {
   display: flex;
   align-items: center;
+
+  font-weight: 500;
   font-style: normal;
   color: $title-text-color;
   text-decoration: none;
@@ -80,6 +95,12 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .link.header {
+    font-size: 12px;
+    line-height: 0.85;
   }
 }
 .address-icon {
@@ -93,4 +114,135 @@
 .mobile {
   width: 10px;
   height: 15px;
+}
+
+/*Mobile navigation*/
+
+.burger-menu .item.line {
+  display: inline-block;
+}
+.burger-menu .item {
+  display: block;
+}
+.burger-menu .item + .item {
+  margin-top: 40px;
+}
+.burger-address {
+  text-align: center;
+}
+
+.burger-address .item + .item {
+  margin-top: 16px;
+}
+
+.burger-address .link {
+  font-weight: 500;
+  font-style: normal;
+  color: $title-text-color;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.menu-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  background-color: $primary-white-color;
+
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+}
+.menu-container > div + div {
+  margin-top: 60px;
+}
+
+.burger-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 16px 15px;
+
+  .link.current {
+    position: relative;
+    color: $accent-color;
+    padding-bottom: 8px;
+  }
+}
+.burger-menu .link {
+  display: block;
+
+  text-decoration: none;
+  color: $primary-text-color;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.burger-nav {
+  @include for-size(tablet-landscape) {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    .menu-container {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+    }
+    .menu-container.is-open {
+      display: block;
+    }
+  }
 }

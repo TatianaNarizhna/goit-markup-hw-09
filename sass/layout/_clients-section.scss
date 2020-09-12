@@ -18,9 +18,19 @@
     border-color: $accent-color;
   }
 }
+
 .client-flex {
   width: calc((100% - 15px * 4) / 2);
   margin: 15px;
+
+  @include for-size(tablet-landscape) {
+    width: calc((100% - 15px * 6) / 3);
+  }
+
+  @include for-size(desktop) {
+    width: 170px;
+    margin: 0;
+  }
 }
 
 .first-co {
