@@ -1317,6 +1317,7 @@ label + textarea::placeholder {
   position: absolute;
   top: 8px;
   right: 8px;
+  padding: 0;
   width: 30px;
   height: 30px;
   background-color: transparent;
