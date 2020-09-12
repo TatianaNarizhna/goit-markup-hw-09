@@ -116,6 +116,8 @@ img {
 
 .container {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1152,9 +1154,6 @@ label + textarea::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (min-width: 1200px) {
@@ -1168,12 +1167,6 @@ label + textarea::placeholder {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-}
-
-.flex-container.gallery {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 
 .flex-social {
@@ -1205,7 +1198,7 @@ label + textarea::placeholder {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .flex-element {
-    width: calc((100% - 15px * 4) / 2);
+    width: calc((100% - 15px * 2) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
