@@ -15,42 +15,81 @@
   <body>
     <!-- Header -->
 
-    <header class="page-header border">
-      <nav class="main-nav container">
-        <a href="./index.html" class="logo">
-          <span> <span class="logo-style">Web</span> Studio</span>
-        </a>
-        <ul class="site-nav list">
-          <li class="item">
-            <a href="./index.html" class="link">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link current">Портфолио</a>
-          </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
-        </ul>
-
-        <ul class="address-nav list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link address-icon">
-              <svg class="envelope">
-                <use href="./images/svg-sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link address-icon"
-              ><svg class="mobile">
-                <use href="./images/svg-sprite.svg#icon-mobile"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-
+  <header class="page-header">
+    <nav class="main-nav container">
+      <a href="./index.html" class="logo">
+        <span> <span class="logo-style">Web</span> Studio</span>
+      </a>
+      <ul class="site-nav list">
+        <li class="item">
+          <a href="./index.html" class="link ">Студия</a>
+        </li>
+        <li class="item">
+          <a href="./portfolio.html" class="link current">Портфолио</a>
+        </li>
+        <li class="item"><a href="" class="link">Контакты</a></li>
+      </ul>
+  
+      <ul class="address-nav list">
+        <li class="item">
+          <a href="mailto:info@devstudio.com" class="link header">
+            <svg class="address-icon envelope">
+              <use href="./images/svg-sprite.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a>
+        </li>
+        <li class="item">
+          <a href="tel:+380961111111" class="link header"><svg class="address-icon mobile">
+              <use href="./images/svg-sprite.svg#icon-mobile"></use>
+            </svg>
+            +38 096 111 11 11</a>
+        </li>
+      </ul>
+    </nav>
+  
+    <nav class="burger-nav container">
+      <a href="./index.html" class="logo">
+        <span> <span class="logo-style">Web</span> Studio</span>
+      </a>
+      <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+        <svg class="btn-hover" width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/svg-sprite.svg#menu"></use>
+          <use class="icon-cross" href="./images/svg-sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="menu-container" data-menu>
+        <div class="burger-menu">
+          <ul class="list">
+            <li class="item line">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+        </div>
+  
+        <div class="burger-address">
+          <ul class="list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link header">
+                <svg class="address-icon envelope">
+                  <use href="./images/svg-sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a>
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link header"><svg class="address-icon mobile">
+                  <use href="./images/svg-sprite.svg#icon-mobile"></use>
+                </svg>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
     <!-- Main -->
 
     <main>
@@ -98,7 +137,7 @@
                                                 " media="(max-width:767px)" />
                 
                   <img class="picture-block" src="./images/portfolio/desktop/img1.jpg" alt="ноутбук"
-                    width="370" />
+                    />
                 </picture>
                 
                 <p class="portfolio-text">
@@ -133,7 +172,7 @@
                                                                   ./images/portfolio/mobile/img2@2x.jpg 2x
                                                                 " media="(max-width:767px)" />
                 
-                  <img class="picture-block" src="./images/portfolio/desktop/img2.jpg" alt="постер" width="370" />
+                  <img class="picture-block" src="./images/portfolio/desktop/img2.jpg" alt="постер" />
                 </picture>
                 <p class="portfolio-text">
                   Технокряк это современная площадка распространения
@@ -169,7 +208,7 @@
                                                                   ./images/portfolio/mobile/img3@2x.jpg 2x
                                                                 " media="(max-width:767px)" />
                 
-                  <img class="picture-block" src="./images/portfolio/desktop/img3.jpg" alt="логотип ресторана" width="370" />
+                  <img class="picture-block" src="./images/portfolio/desktop/img3.jpg" alt="логотип ресторана"  />
                 </picture>
                 <p class="portfolio-text">
                   Технокряк это современная площадка распространения
@@ -202,7 +241,7 @@
                                                                   ./images/portfolio/mobile/img4@2x.jpg 2x
                                                                 " media="(max-width:767px)" />
                 
-                  <img class="picture-block" src="./images/portfolio/desktop/img4.jpg" alt="наушники" width="370" />
+                  <img class="picture-block" src="./images/portfolio/desktop/img4.jpg" alt="наушники"  />
                 </picture>
                 <p class="portfolio-text">
                   Технокряк это современная площадка распространения
@@ -235,7 +274,7 @@
                                                                                   ./images/portfolio/mobile/img5@2x.jpg 2x
                                                                                 " media="(max-width:767px)" />
                 
-                  <img class="picture-block" src="./images/portfolio/desktop/img5.jpg" alt="упаковка" width="370" />
+                  <img class="picture-block" src="./images/portfolio/desktop/img5.jpg" alt="упаковка"  />
                 </picture>
                 <p class="portfolio-text">
                   Технокряк это современная площадка распространения
@@ -268,7 +307,7 @@
                                                                   ./images/portfolio/mobile/img6@2x.jpg 2x
                                                                 " media="(max-width:767px)" />
                 
-                  <img class="picture-block" src="./images/portfolio/desktop/img6.jpg" alt="монитор" width="370" />
+                  <img class="picture-block" src="./images/portfolio/desktop/img6.jpg" alt="монитор"  />
                 </picture>
                 <p class="portfolio-text">
                   Технокряк это современная площадка распространения
@@ -301,7 +340,7 @@
                                                                   ./images/portfolio/mobile/img7@2x.jpg 2x
                                                                 " media="(max-width:767px)" />
                 
-                  <img class="picture-block" src="./images/portfolio/desktop/img7.jpg" alt="журнал" width="370" />
+                  <img class="picture-block" src="./images/portfolio/desktop/img7.jpg" alt="журнал"  />
                 </picture>
                 <p class="portfolio-text">
                   Технокряк это современная площадка распространения
@@ -334,7 +373,7 @@
                                                                   ./images/portfolio/mobile/img8@2x.jpg 2x
                                                                 " media="(max-width:767px)" />
                 
-                  <img class="picture-block" src="./images/portfolio/desktop/img8.jpg" alt="этикетка" width="370" />
+                  <img class="picture-block" src="./images/portfolio/desktop/img8.jpg" alt="этикетка"  />
                 </picture>
                 <p class="portfolio-text">
                   Технокряк это современная площадка распространения
@@ -367,7 +406,7 @@
                                                                                   ./images/portfolio/mobile/img9@2x.jpg 2x
                                                                                 " media="(max-width:767px)" />
                 
-                  <img class="picture-block" src="./images/portfolio/desktop/img9.jpg" alt="ноутбук" width="370" />
+                  <img class="picture-block" src="./images/portfolio/desktop/img9.jpg" alt="ноутбук"  />
                 </picture>
                 <p class="portfolio-text">
                   Технокряк это современная площадка распространения
@@ -463,7 +502,7 @@
         </form>
       </div>
     </footer>
-
+<script src="./js/menu.js"></script>
   
   </body>
 </html>

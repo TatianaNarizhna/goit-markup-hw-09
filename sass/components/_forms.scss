@@ -5,12 +5,15 @@
 
   @include for-size(desktop) {
     margin-right: 12px;
+    margin-bottom: 0;
     width: 358px;
   }
 }
-// .form-position {
-//   display: flex;
-// }
+@include for-size(desktop) {
+  .form-position {
+    display: flex;
+  }
+}
 .form-position input {
   padding: 16px 15px;
 
