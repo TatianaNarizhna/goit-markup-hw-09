@@ -1157,19 +1157,6 @@ label + textarea::placeholder {
           justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-}
-
 @media (min-width: 1200px) {
   .flex-container {
     display: -webkit-box;
@@ -1181,6 +1168,12 @@ label + textarea::placeholder {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+.flex-container.gallery {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .flex-social {
